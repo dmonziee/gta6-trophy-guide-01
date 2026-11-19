@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI (PS5)</title>
+<meta name="description" content="A complete, offline tracker and guide for the 55 PlayStation 5 trophies of Grand Theft Auto VI: checklists, filters, a spoiler setting, a platinum roadmap and a guide for every trophy.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-text">
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5</p>
+    <h1>Leonida Trophy Guide</h1>
+    <p class="lede">All 55 trophies — 1 platinum, 2 gold, 6 silver, 46 bronze — with a tracker, a platinum roadmap and a guide for every one. Works fully offline; your progress never leaves this browser.</p>
+  </div>
+  <div class="progress" aria-label="Platinum progress">
+    <p class="progress-line"><strong id="earned-count">0 / 55</strong> earned &middot; <span id="earned-pct">0%</span></p>
+    <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="55" aria-valuenow="0" id="progress-bar"><div class="bar-fill" id="progress-fill"></div></div>
+    <p class="progress-note" id="progress-note">Platinum: Vice Got a Price! — earn the other 54.</p>
+  </div>
+</header>
+
+<nav class="views" aria-label="Sections">
+  <button type="button" class="view-tab is-active" data-view="checklist">Checklist</button>
+  <button type="button" class="view-tab" data-view="roadmap">Platinum roadmap</button>
+  <button type="button" class="view-tab" data-view="sources">Sources</button>
+</nav>
+
+<section class="panel" id="view-checklist" aria-label="Trophy checklist">
+  <div class="controls">
+    <label class="control search">Search
+      <input id="search" type="search" placeholder="Name, description or guide text…" autocomplete="off">
+    </label>
+    <label class="control">Grade
+      <select id="grade">
+        <option value="all">All grades</option>
+        <option value="platinum">Platinum</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="bronze">Bronze</option>
+      </select>
+    </label>
+    <label class="control">Kind
+      <select id="kind">
+        <option value="all">All kinds</option>
+        <option value="story">Story</option>
+        <option value="missable">Missable</option>
+        <option value="collectibles">Collectibles</option>
+        <option value="activities">Activities</option>
+        <option value="completion">Completion</option>
+        <option value="online">Online</option>
+      </select>
+    </label>
+    <label class="control">Status
+      <select id="status">
+        <option value="all">All</option>
+        <option value="earned">Earned</option>
+        <option value="not-earned">Not earned</option>
+      </select>
+    </label>
+    <label class="control switch">
+      <input id="spoiler" type="checkbox" checked>
+      <span>Hide story spoilers</span>
+    </label>
+    <div class="control actions">
+      <button id="export" type="button">Export progress</button>
+      <label class="import">Import progress
+        <input id="import" type="file" accept="application/json,.json">
+      </label>
+    </div>
+  </div>
+  <p class="hint" id="filter-hint"></p>
+  <div id="list" class="list"></div>
+  <p class="empty" id="empty" hidden>No trophies match these filters.</p>
+  <p class="empty" id="online-empty" hidden>No online trophies — Grand Theft Auto VI has 0 online trophies. Every trophy is single-player.</p>
+</section>
+
+<section class="panel" id="view-roadmap" hidden aria-label="Platinum roadmap">
+  <h2>Road to the platinum — about 200 hours</h2>
+  <p class="roadmap-intro">Difficulty 4/10, one playthrough, no mission replay, no New Game+, no difficulty settings. Cheats disable trophies <em>and</em> saving, so leave them alone. Keep a manual save at the start and end of each chapter (15 manual slots + 1 autosave) — with no mission replay, a chapter-start save is your only way back.</p>
+
+  <ol class="stages">
+    <li>
+      <h3>Step 1 — Finish the story (60–80 hours)</h3>
+      <p>Just play the story and enjoy it. The story is divided into 5 chapters. The 100% checklist is not viewable until after the story, but any progress you make during the story already counts toward it. There are no mission gold medals, so you never need to watch for hidden objectives.</p>
+      <p class="warn"><strong>One potentially missable trophy:</strong> Positive Mental Attitude. In Chapter 1, after the mission Down to Earth, talk to Lucia in the kitchen in the morning — she goes to meditate on the balcony. Accept, and do it in Chapter 1. It is unclear whether that meditation is required for the trophy, so do it and keep a Chapter 1 save. Everything else can be done after the story.</p>
+      <p>While you play, scan every new vehicle with the WAiNK app (hold Up, then R1) and study animals through the binoculars — both count toward the 100% checklist later.</p>
+    </li>
+    <li>
+      <h3>Step 2 — 100% Completion checklist &amp; 70 of 80 challenges (~100 hours)</h3>
+      <p>After the story, the checklist appears under Progress &gt; Stats &gt; 100% Completion. It is forgiving — closer to 60% true completion. You only need 70 of 80 challenges, so skip the hardest ones.</p>
+      <ul class="checklist-numbers">
+        <li>Scan 200 of 277 base-model vehicles</li>
+        <li>Study 100 of 255 animals</li>
+        <li>50 of 66 weapons</li>
+        <li>70 of 80 challenges</li>
+        <li>100 optional missions (there are 200–300+)</li>
+        <li>300 stunts (trophy needs 250 of 397)</li>
+        <li>15 of 18 meditations</li>
+        <li>All 8 bank vaults</li>
+        <li>All 39 gang operations</li>
+        <li>All 15 Target Decks</li>
+        <li>All 12 shooting ranges — 42 gold medals</li>
+      </ul>
+      <p>The only tasks that need everything are robberies, underwater discoveries, shooting ranges, drone races and Bret's quests. Most side quests are not needed at all.</p>
+    </li>
+    <li>
+      <h3>Step 3 — Strangers &amp; Freaks and miscellaneous cleanup (~10 hours)</h3>
+      <p>Strangers &amp; Freaks are not needed for 100%, so finish the 8 strands that count (see the Strangers &amp; Freaks trophy) and clean up whatever is left — a few activities, a couple of odd trophies, and the two not-yet-confirmed ones if methods have surfaced by then.</p>
+    </li>
+  </ol>
+  <p class="roadmap-foot">Sources: PowerPyx — GTA 6 Trophy Guide &amp; Roadmap and GTA 6 100% Completion Checklist. See the Sources tab for links.</p>
+</section>
+
+<section class="panel" id="view-sources" hidden aria-label="Sources">
+  <h2>Sources</h2>
+  <p>Every trophy's guide cites its sources in its card. The trophy names, descriptions and grades are the official list; the guide text is written for this guide. Two trophies (Bad Luck, I Guess and Ten Pin) are marked “not yet confirmed” because their methods were still unknown when this guide was written — this guide does not invent methods for them.</p>
+  <ul class="source-list">
+    <li><a href="https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/">PowerPyx — GTA 6 Trophy Guide &amp; Roadmap</a> — methods, roadmap, 100% checklist numbers, missable warning</li>
+    <li><a href="https://www.powerpyx.com/gta-6-100-completion-checklist-guide/">PowerPyx — GTA 6 100% Completion Checklist</a> — the full checklist numbers</li>
+    <li><a href="https://www.planetgta6.com/en/gta-6-trophies/">PlanetGTA6 — GTA 6 Trophies</a> — cross-check of the 55 names, descriptions and grades</li>
+  </ul>
+  <p class="disclaimer">Unofficial fan guide. Not affiliated with Rockstar Games, Take-Two Interactive or Sony Interactive Entertainment. Grand Theft Auto and GTA are trademarks of Take-Two Interactive. No game art, logos or screenshots are used here.</p>
+</section>
+
+<footer class="foot">
+  <p>Your progress is stored only in this browser (localStorage). Export it to keep a backup, import it to restore it. This guide works with the network off — the source links above are the only outside references, and they are plain links you choose to follow.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
